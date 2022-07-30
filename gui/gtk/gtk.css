@@ -1,0 +1,4 @@
+// Some *nix distro's don't expose margin/padding ui options.
+vte-terminal {
+  padding: 25px;
+}

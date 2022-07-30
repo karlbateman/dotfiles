@@ -1,0 +1,81 @@
+export XDG_CONFIG_HOME="${HOME}/.config"
+
+# Set terminal colours.
+#export TERM="xterm-256color"
+
+# Set program editors.
+export EDITOR="nvim"
+export VISUAL="${EDITOR}"
+export GIT_EDITOR="${EDITOR}"
+
+export MANPATH="/usr/local/man:${MANPATH}"
+export LANG="en_GB.UTF-8"
+export ARCHFLAGS="-arch x86_64"
+
+# Fuzzy finder configuration.
+# See: https://github.com/junegunn/fzf
+export FZF_DEFAULT_COMMAND="rg --files"
+export FZF_DEFAULT_OPTS="--height 25% --border"
+
+# Golang SDK, binaries and sources.
+export GOROOT="/usr/local/go"
+export GOPATH="${HOME}/go"
+export PATH="${GOROOT}/bin:${PATH}"
+export PATH="${GOPATH}/bin:${PATH}"
+export PATH="/usr/local/go/bin:${PATH}"
+
+# Disable pre-commit colours.
+export PRE_COMMIT_COLOR="never"
+
+# Rust binaries.
+export PATH="${HOME}/.cargo/bin:${PATH}"
+
+# Docker configuration.
+export PATH="/usr/bin:${PATH}"
+export DOCKER_HOST="unix:///run/user/1000/docker.sock"
+
+# Python3 binaries
+export PATH="${HOME}/.local/bin:${PATH}"
+
+# Local binaries.
+export PATH="${HOME}/bin:${PATH}"
+
+# Poetry - Python Dependency Management.
+export PATH="${HOME}/.poetry/bin:${PATH}"
+
+# Fzf Dracula theme.
+export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
+
+# We don't want .pyc, .pyo and __pycache__ on a dev machine.
+export PYTHONDONTWRITEBYTECODE=True
+
+# Java configuration.
+export JAVA_HOME="/usr/lib/jvm/default-java/"
+
+# Aliases.
+alias up="docker-compose up"
+alias upd="docker-compose up --detach"
+alias docker-ip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+alias docker-kill-all='docker kill `docker ps -q`'
+alias docker-rm-all='docker rm `docker ps -a -q`'
+alias docker-clear='docker-kill-all;docker-rm-all'
+alias docker-rmi-all='docker rmi -f `docker images -q`'
+alias docker-rmi='docker rmi `docker images -f "dangling=true" -q`'
+alias docker-rmi-none="docker images | gsed 's/\s\+/ /g' | grep '<none>' | cut -d ' ' -f 3 | xargs docker rmi"
+
+alias ls="exa --color=always --recurse --tree --ignore-glob='dist|node_modules|venv|lib|bower_components|.git'"
+alias ll="exa --long --header --git"
+alias l="exa --long --header --git --tree --ignore-glob='dist|node_modules|venv|lib|bower_components|.git'"
+
+alias killp="fuser -n tcp -k $1"
+alias top="btm"
+
+alias vim="nvim"
+
+# Node version manager.
+export NVM_DIR="${HOME}/.config/nvm"
+[ -s "${NVM_DIR}/nvm.sh" ] && source "${NVM_DIR}/nvm.sh"
+[ -s "${NVM_DIR}/bash_completion" ] && source "${NVM_DIR}/bash_completion"
+
+# Node binaries (needs to be after NVM setup).
+export PATH="${HOME}/.config/nvm/vesions/node/$(nvm current)/bin:${PATH}"

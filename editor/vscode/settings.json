@@ -1,0 +1,116 @@
+{
+  // Workbench settings.
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "moxer-icons",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.startupEditor": "readme",
+  "workbench.tips.enabled": false,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#44475a",
+    "editor.lineHighlightBorder": "#44475a",
+    "editorCursor.foreground": "#f8f8f2",
+    "terminalCursor.foreground": "#f8f8f2"
+  },
+
+  // Window settings.
+  "window.menuBarVisibility": "toggle",
+  "window.restoreWindows": "none",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 2,
+
+  // Explorer settings.
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "type",
+
+  // File settings.
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.pyc": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/venv": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true,
+    "**/venv/**": true
+  },
+  "files.associations": {
+    "config": "plaintext",
+    "profile": "plaintext"
+  },
+
+  // Terminal settings.
+  "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
+  "terminal.integrated.fontSize": 14,
+
+  // Editor settings.
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "editor.rulers": [79],
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "off",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "phase",
+  "editor.minimap.renderCharacters": false,
+  "editor.renderLineHighlight": "all",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Comment",
+        "scope": [
+          "comment",
+          "comment.block",
+          "comment.block.documentation",
+          "comment.line"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  // Python settings.
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "${workspaceFolder}/venv/bin/pylint",
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/venv/bin/black",
+  "python.formatting.blackArgs": ["--line-length=80"],
+  "python.venvPath": "${workspaceFolder}/venv",
+
+  // Go settings.
+  "go.toolsManagement.autoUpdate": true,
+
+  // Typescript settings.
+  "typescript.tsserver.log": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Formatter settings.
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Misc settings.
+  "breadcrumbs.enabled": false,
+  "security.workspace.trust.enabled": false,
+  "Lua.telemetry.enable": false
+}
+

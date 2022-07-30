@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "antfu.icons-carbon",
+    "streetsidesoftware.code-spell-checker",
+    "dracula-theme.theme-dracula",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "golang.go",
+    "sumneko.lua",
+    "equinusocio.moxer-icons",
+    "bradymholt.pgformatter",
+    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "prisma.prisma",
+    "ms-python.vscode-pylance",
+    "rust-lang.rust-analyzer",
+    "bradlc.vscode-tailwindcss"
+  ],
+  "unwantedRecommendations": []
+}
