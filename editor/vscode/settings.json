@@ -86,13 +86,15 @@
       }
     ]
   },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
 
   // Python settings.
   "python.linting.pylintEnabled": true,
-  "python.linting.pylintPath": "${workspaceFolder}/venv/bin/pylint",
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "${workspaceFolder}/venv/bin/black",
   "python.formatting.blackArgs": ["--line-length=80"],
   "python.venvPath": "${workspaceFolder}/venv",
 
