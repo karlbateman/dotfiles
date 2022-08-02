@@ -15,7 +15,8 @@
     "ms-python.vscode-pylance",
     "rust-lang.rust-analyzer",
     "bradlc.vscode-tailwindcss",
-    "ecmel.vscode-html-css"
+    "ecmel.vscode-html-css",
+    "azuretools.vscode-docker"
   ],
   "unwantedRecommendations": []
 }
