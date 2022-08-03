@@ -9,7 +9,9 @@
     "editor.lineHighlightBackground": "#44475a",
     "editor.lineHighlightBorder": "#44475a",
     "editorCursor.foreground": "#f8f8f2",
-    "terminalCursor.foreground": "#f8f8f2"
+    "scrollbar.shadow": "#282a36",
+    "terminalCursor.foreground": "#f8f8f2",
+    "widget.shadow": "#282a36"
   },
 
   // Window settings.
@@ -98,12 +100,11 @@
   "python.formatting.blackArgs": ["--line-length=80"],
   "python.venvPath": "${workspaceFolder}/venv",
 
-  // Javascript/Typescript settings.
-  "javascript.suggest.paths": false,
-  "typescript.suggest.paths": false,
-
   // Go settings.
   "go.toolsManagement.autoUpdate": true,
+
+  // Javascript settings.
+  "javascript.suggest.paths": false,
 
   // Typescript settings.
   "typescript.tsserver.log": "off",
@@ -119,3 +120,4 @@
   "security.workspace.trust.enabled": false,
   "Lua.telemetry.enable": false
 }
+
