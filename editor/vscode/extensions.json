@@ -16,7 +16,9 @@
     "rust-lang.rust-analyzer",
     "bradlc.vscode-tailwindcss",
     "ecmel.vscode-html-css",
-    "azuretools.vscode-docker"
+    "ms-vscode.makefile-tools",
+    "ms-azuretools.vscode-docker",
+    "christian-kohler.path-intellisense"
   ],
   "unwantedRecommendations": []
 }

@@ -98,6 +98,10 @@
   "python.formatting.blackArgs": ["--line-length=80"],
   "python.venvPath": "${workspaceFolder}/venv",
 
+  // Javascript/Typescript settings.
+  "javascript.suggest.paths": false,
+  "typescript.suggest.paths": false,
+
   // Go settings.
   "go.toolsManagement.autoUpdate": true,
 
