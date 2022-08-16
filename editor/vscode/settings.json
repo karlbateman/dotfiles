@@ -60,6 +60,8 @@
   "terminal.integrated.fontSize": 14,
 
   // Editor settings.
+  "editor.minimap.scale": 2,
+  "editor.renderWhitespace": "all",
   "editor.acceptSuggestionOnEnter": "off",
   "editor.fontSize": 14,
   "editor.fontFamily": "'JetBrains Mono', monospace",
