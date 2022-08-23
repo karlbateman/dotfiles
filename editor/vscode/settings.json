@@ -60,6 +60,7 @@
   "terminal.integrated.fontSize": 14,
 
   // Editor settings.
+  "editor.minimap.autohide": true,
   "editor.minimap.scale": 2,
   "editor.renderWhitespace": "all",
   "editor.acceptSuggestionOnEnter": "off",
@@ -122,4 +123,3 @@
   "security.workspace.trust.enabled": false,
   "Lua.telemetry.enable": false
 }
-
