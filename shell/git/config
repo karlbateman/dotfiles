@@ -21,33 +21,25 @@
 
 [commit]
   template = ~/.config/git/commit.template
-  gpgsign = false
+  gpgsign = true
 
 [core]
   excludesfile = ~/.gitignore
   safecrlf = true
   trustctime = false
-  editor = nvim
-  pager = delta
+  editor = code --wait
 
-[interactive]
-  diffFilter = delta --color-only --features=interactive
+[diff]
+  tool = code
 
-[delta]
-  side-by-side = true
-  features = decorations
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
 
-[delta "interactive"]
-  keep-plus-minus-markers = false
+[merge]
+  tool = vscode
 
-[delta "decorations"]
-  commit-decoration-style = blue ol
-  commit-style = raw
-  file-style = omit
-  hunk-header-decoration-style = blue box
-  hunk-header-file-style = red
-  hunk-header-line-number-style = "#067a00"
-  hunk-header-style = file line-number syntax
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
 
 [pull]
   ff = only
