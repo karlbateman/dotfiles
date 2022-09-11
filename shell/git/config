@@ -27,19 +27,35 @@
   excludesfile = ~/.gitignore
   safecrlf = true
   trustctime = false
-  editor = code --wait
+  editor = nvim
+  pager = delta
 
-[diff]
-  tool = code
+[interactive]
+  diffFilter = delta --color-only --features=interactive
 
-[difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+[delta]
+  side-by-side = true
+  features = decorations
+  syntax-theme = Dracula
+
+[delta "interactive"]
+  keep-plus-minus-markers = false
+
+[delta "decorations"]
+  commit-decoration-style = blue ol
+  commit-style = raw
+  file-style = omit
+  hunk-header-decoration-style = blue box
+  hunk-header-file-style = red
+  hunk-header-line-number-style = "#067a00"
+  hunk-header-style = file line-number syntax
 
 [merge]
-  tool = vscode
+  tool = nvim -d
+  conflictstyle = diff3
 
-[mergetool "vscode"]
-  cmd = code --wait $MERGED
+[diff]
+  colorMoved = default
 
 [pull]
   ff = only
@@ -50,18 +66,11 @@
 [help]
   autocorrect = 1
 
-[diff]
-  algorithm = patience
-  compactHeuristic = true
-
 [protocol]
   version = 2
 
 [github]
   user = karlbateman
-
-[merge]
-  tool = nvim -d
 
 [user]
   name = Karl Bateman
