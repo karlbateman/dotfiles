@@ -1,17 +1,17 @@
 {
   // Workbench settings.
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "moxer-icons",
+  "workbench.colorTheme": "poimandres",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "readme",
   "workbench.tips.enabled": false,
   "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#44475a",
-    "editor.lineHighlightBorder": "#44475a",
-    "editorCursor.foreground": "#f8f8f2",
-    "scrollbar.shadow": "#282a36",
-    "terminalCursor.foreground": "#f8f8f2",
-    "widget.shadow": "#282a36"
+    // "editor.lineHighlightBackground": "#44475a",
+    // "editor.lineHighlightBorder": "#44475a",
+    // "editorCursor.foreground": "#f8f8f2",
+    // "scrollbar.shadow": "#282a36",
+    // "terminalCursor.foreground": "#f8f8f2",
+    // "widget.shadow": "#282a36"
   },
 
   // Window settings.
@@ -60,6 +60,7 @@
   "terminal.integrated.fontSize": 14,
 
   // Editor settings.
+  "editor.minimap.enabled": false,
   "editor.minimap.autohide": true,
   "editor.minimap.scale": 2,
   "editor.renderWhitespace": "all",
@@ -121,5 +122,13 @@
   // Misc settings.
   "breadcrumbs.enabled": false,
   "security.workspace.trust.enabled": false,
-  "Lua.telemetry.enable": false
+  "Lua.telemetry.enable": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "material-icon-theme.hidesExplorerArrows": true,
+  "material-icon-theme.folders.color": "#a6accd",
+  "material-icon-theme.saturation": 0,
+  "material-icon-theme.folders.theme": "classic"
 }
+
