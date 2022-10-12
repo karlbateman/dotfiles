@@ -1,17 +1,17 @@
 {
   // Workbench settings.
-  "workbench.colorTheme": "poimandres",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "readme",
   "workbench.tips.enabled": false,
   "workbench.colorCustomizations": {
-    // "editor.lineHighlightBackground": "#44475a",
-    // "editor.lineHighlightBorder": "#44475a",
-    // "editorCursor.foreground": "#f8f8f2",
-    // "scrollbar.shadow": "#282a36",
-    // "terminalCursor.foreground": "#f8f8f2",
-    // "widget.shadow": "#282a36"
+    "editor.lineHighlightBackground": "#44475a",
+    "editor.lineHighlightBorder": "#44475a",
+    "editorCursor.foreground": "#f8f8f2",
+    "scrollbar.shadow": "#282a36",
+    "terminalCursor.foreground": "#f8f8f2",
+    "widget.shadow": "#282a36"
   },
 
   // Window settings.
@@ -127,8 +127,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.folders.color": "#a6accd",
-  "material-icon-theme.saturation": 0,
-  "material-icon-theme.folders.theme": "classic"
+  "material-icon-theme.folders.color": "#6272a4",
+  "material-icon-theme.saturation": 1,
+  "material-icon-theme.folders.theme": "classic",
+  "cSpell.language": "en-GB"
 }
 
