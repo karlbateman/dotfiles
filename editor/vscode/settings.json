@@ -18,14 +18,15 @@
     "minimap.warningHighlight": "#FFB86C",
     "minimap.selectionOccurrenceHighlight": "#50fa7b",
     "editorOverviewRuler.background": "#191A21",
-    "scrollbarSlider.activeBackground": "#F8F8F2",
-    "scrollbarSlider.hoverBackground": "#424450",
-    "scrollbarSlider.background": "#343746",
+    "scrollbarSlider.activeBackground": "#F8F8F244",
+    "scrollbarSlider.hoverBackground": "#F8F8F233",
+    "scrollbarSlider.background": "#F8F8F222",
     "terminalCursor.foreground": "#F8F8F2",
-    "scrollbar.shadow": "#282a36",
-    "widget.shadow": "#282a36",
-    "listFilterWidget.shadow": "#282a36",
-    "statusBarItem.remoteBackground": "#21222C",
+    "scrollbar.shadow": "#282A36",
+    "widget.shadow": "#282A36",
+    "listFilterWidget.shadow": "#282A36",
+    "statusBar.background": "#343746",
+    "statusBarItem.remoteBackground": "#F8F8F222",
     "statusBarItem.remoteForeground": "#F8F8F2"
   },
 
@@ -140,6 +141,7 @@
   "material-icon-theme.folders.color": "#6272a4",
   "material-icon-theme.saturation": 1,
   "material-icon-theme.folders.theme": "classic",
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": ["bson"]
 }
 
